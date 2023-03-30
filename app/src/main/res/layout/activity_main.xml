@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_output"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_bottom" />
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/txt_welcome"
+        android:textColor="#2196F3"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp">
+
+        <ImageButton
+            android:id="@+id/bt_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:src="@drawable/ic_voice"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/edt_messgae"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toStartOf="@id/bt_send"
+            android:layout_toEndOf="@id/bt_voice"
+            android:background="@drawable/bg_edt"
+            android:hint="@string/txt_write_here"
+            android:inputType="text"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:ignore="Autofill" />
+
+        <ImageButton
+            android:id="@+id/bt_send"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:src="@drawable/ic_send"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+</RelativeLayout>

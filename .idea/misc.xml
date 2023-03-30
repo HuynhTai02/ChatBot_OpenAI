@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/API_ChatGPT/app/src/main/res/drawable/bg_edt.xml" value="0.1425" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/drawable/bg_gpt_splash.xml" value="0.196" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/drawable/bg_rec_bot.xml" value="0.1425" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/drawable/chatgpt_avatar.xml" value="0.196" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/drawable/drag_handle.xml" value="0.196" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/drawable/ic_android_black_24dp.xml" value="0.196" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.196" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/drawable/ic_baseline_construction_24.xml" value="0.196" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/drawable/ic_baseline_contact_support_24.xml" value="0.196" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.196" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/drawable/ic_baseline_key_24.xml" value="0.196" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/drawable/ic_baseline_question_mark_24.xml" value="0.196" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/drawable/ic_baseline_remove_red_eye_24.xml" value="0.196" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/drawable/ic_baseline_save_24.xml" value="0.196" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/drawable/ic_baseline_send_24.xml" value="0.196" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/drawable/ic_launcher_background.xml" value="0.196" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/drawable/ic_outline_auto_awesome_24.xml" value="0.196" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/drawable/ic_outline_textsms_24.xml" value="0.196" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/drawable/ic_outline_token_24.xml" value="0.196" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/drawable/ic_send.xml" value="0.1595" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/drawable/ic_voice.xml" value="0.196" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/layout/activity_main.xml" value="0.2361111111111111" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/layout/activity_no_network.xml" value="0.259375" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/layout/activity_splash.xml" value="0.176" />
+        <entry key="..\:/API_ChatGPT/app/src/main/res/layout/item_chat.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
