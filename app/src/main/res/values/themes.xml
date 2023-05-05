@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.API_ChatGPT" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.API_ChatGPT" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#2196F3</item>
         <item name="colorPrimaryVariant">#03518F</item>

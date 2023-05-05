@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "API_ChatGPT"
+rootProject.name = "ChatBot_OpenAI"
 include ':app'

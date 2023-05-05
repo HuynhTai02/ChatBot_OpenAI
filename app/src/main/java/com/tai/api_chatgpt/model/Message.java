@@ -3,7 +3,6 @@ package com.tai.api_chatgpt.model;
 public class Message {
     public static String SENT_BY_HUMAN = "human";
     public static String SENT_BY_AI = "ai";
-
     public String message;
     public String sentBy;
 
@@ -19,5 +18,4 @@ public class Message {
     public String getSentBy() {
         return sentBy;
     }
-
 }

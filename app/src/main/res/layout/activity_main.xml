@@ -3,49 +3,185 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
     tools:context=".view.MainActivity">
 
+    <SearchView
+        android:visibility="gone"
+        android:id="@+id/sv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_search"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search Here..."
+       />
+
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/sv_message"
         android:id="@+id/rv_output"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/rl_bottom" />
 
-    <TextView
-        android:id="@+id/tv_welcome"
+    <LinearLayout
+        android:id="@+id/ln_ex"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:gravity="center"
-        android:text="@string/txt_welcome"
-        android:textColor="#2196F3"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:orientation="vertical"
+        android:paddingHorizontal="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/txt_welcome"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:drawableTop="@drawable/ic_sun"
+            android:text="@string/txt_examples"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+
+        <Button
+            android:id="@+id/bt_ex1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_ai_chat"
+            android:drawableEnd="@drawable/ic_right_arrow"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/txt_ex1"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+
+        <Button
+            android:id="@+id/bt_ex2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_ai_chat"
+            android:drawableEnd="@drawable/ic_right_arrow"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/txt_ex2"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:drawableTop="@drawable/ic_capabilities"
+            android:text="@string/txt_capabilities"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_ai_chat"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/txt_cap1"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_ai_chat"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/txt_cap2"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:drawableTop="@drawable/ic_warning"
+            android:text="@string/txt_limitations"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_ai_chat"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/txt_lim1"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_ai_chat"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/txt_lim2"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+
+    </LinearLayout>
 
     <RelativeLayout
         android:id="@+id/rl_bottom"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="5dp">
+        android:layout_alignParentBottom="true">
 
-        <ImageButton
-            android:id="@+id/bt_voice"
+        <ImageView
+            android:id="@+id/iv_voice"
             android:layout_width="wrap_content"
-            android:layout_height="80dp"
+            android:layout_height="match_parent"
             android:layout_alignParentStart="true"
-            android:background="@color/white"
-            android:padding="10dp"
+            android:padding="5dp"
             android:src="@drawable/ic_voice"
             tools:ignore="ContentDescription" />
 
         <EditText
-            android:id="@+id/edt_messgae"
+            android:id="@+id/edt_message"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_toStartOf="@id/bt_send"
-            android:layout_toEndOf="@id/bt_voice"
+            android:layout_toStartOf="@id/iv_send"
+            android:layout_toEndOf="@id/iv_voice"
             android:background="@drawable/bg_edt"
             android:hint="@string/txt_write_here"
             android:inputType="text"
@@ -54,14 +190,14 @@
             android:textSize="16sp"
             tools:ignore="Autofill" />
 
-        <ImageButton
-            android:id="@+id/bt_send"
+        <ImageView
+            android:id="@+id/iv_send"
             android:layout_width="wrap_content"
-            android:layout_height="80dp"
+            android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
-            android:background="@color/white"
-            android:padding="10dp"
+            android:padding="5dp"
             android:src="@drawable/ic_send"
             tools:ignore="ContentDescription" />
     </RelativeLayout>
+
 </RelativeLayout>

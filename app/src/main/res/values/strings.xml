@@ -1,9 +1,19 @@
 <resources>
-    <string name="app_name">ChatGPT Mobile</string>
-    <string name="txt_welcome">Welcome to ChatGPT\nWith Api OpenAI</string>
+    <string name="app_name">ChatGPT</string>
+    <string name="txt_welcome">Welcome to ChatBot\nWith Api OpenAI</string>
     <string name="txt_write_here">Write here .....</string>
-    <string name="txt_chat">How to learn Object Orientation Programing With Java?</string>
     <string name="txt_you">You</string>
     <string name="txt_ai">Ai</string>
-    <string name="txt_name">Ai ChatGPT</string>
+    <string name="txt_name">ChatBot OpenAI</string>
+    <string name="txt_examples">Examples</string>
+    <string name="txt_ex1">"How to learn Java?" </string>
+    <string name="txt_ex2">"How to count two float in Kotlin?" </string>
+    <string name="txt_cap1">Remembers what user said earlier in the conversation </string>
+    <string name="txt_cap2">Trained to decline inappropriate requests </string>
+    <string name="txt_lim1">May occasionally generate incorrect information </string>
+    <string name="txt_lim2">Limited knowledge of world and events after 2021 </string>
+    <string name="txt_capabilities">Capabilities</string>
+    <string name="txt_limitations">Limitations</string>
+    <string name="no_internet_connection">No Internet</string>
+    <string name="try_again">Try Again</string>
 </resources>

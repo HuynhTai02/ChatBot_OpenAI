@@ -1,4 +1,4 @@
-package com.tai.api_chatgpt;
+package com.tai.chatbot_openai;
 
 import android.content.Context;
 
