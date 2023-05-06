@@ -103,10 +103,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void search() {
+        binding.svMessage.clearFocus();
         binding.svMessage.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                binding.svMessage.clearFocus();
                 return false;
             }
 
@@ -142,6 +142,7 @@ public class MainActivity extends AppCompatActivity {
             callAPI(question);
 
             binding.svMessage.setVisibility(View.VISIBLE);
+            binding.ivSend.setVisibility(View.GONE);
             binding.lnEx.setVisibility(View.GONE);
         });
 
@@ -153,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
             callAPI(question);
 
             binding.svMessage.setVisibility(View.VISIBLE);
+            binding.ivSend.setVisibility(View.GONE);
             binding.lnEx.setVisibility(View.GONE);
         });
     }

@@ -14,12 +14,14 @@
         android:layout_marginStart="7dp"
         android:layout_marginEnd="7dp"
         android:layout_marginBottom="7dp"
+        android:weightSum="1"
         tools:ignore="UselessParent">
 
         <TextView
             android:id="@+id/tv_human_chat"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="0.75"
             android:background="@drawable/bg_human_chat"
             android:padding="10dp"
             android:text="@string/txt_welcome"
@@ -27,10 +29,12 @@
             android:textSize="18sp" />
 
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_user" />
+            android:layout_weight="0.25"
+            android:src="@drawable/ic_user"
+            tools:ignore="ContentDescription" />
     </TableRow>
 
     <LinearLayout
@@ -38,25 +42,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:weightSum="1">
+        android:weightSum="1"
+        tools:ignore="RelativeOverlap">
 
         <TableRow
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_marginStart="30dp"
             android:layout_weight="0.25">
+
             <ImageView
                 android:id="@+id/iv_share"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="10dp"
-                android:src="@drawable/ic_sharing" />
+                android:src="@drawable/ic_sharing"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/iv_copy"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/ic_copy" />
+                android:src="@drawable/ic_copy"
+                tools:ignore="ContentDescription" />
         </TableRow>
 
         <TableRow
@@ -74,7 +82,8 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_bot" />
+                android:src="@drawable/ic_bot"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/tv_ai_chat"
