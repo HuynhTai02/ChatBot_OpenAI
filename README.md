@@ -1,6 +1,10 @@
 # ChatBot_OpenAI
+
 ## Install ChatBot_OpenAI
 <p align="center">
-<img src="https://user-images.githubusercontent.com/106971476/236522664-f2fa6b37-66b8-4724-ab9c-13726225f8e0.png"/>
+<img src="https://user-images.githubusercontent.com/106971476/236611415-9b4eca95-4e51-42a1-a8c5-991b226fe41b.png"/>
 </p>
-## Video Demo
+
+## Link Youtube video Demo
+
++ https://www.youtube.com/watch?v=bPwYrutevgY&t=4s&ab_channel=T-DevMobile
